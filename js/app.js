@@ -1,1 +1,1 @@
-ECHO is on.
+app = document.getElementById('app');
