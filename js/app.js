@@ -1,5 +1,42 @@
-app = document.getElementById('app');
+//  var dealerName = document.getElementById('dname').value;
 
+function getInput() {
+    let dealerName = document.forms["seoForm"]['dname'].value;
+    let dealerCity = document.forms["seoForm"]['dcity'].value;
+    let dealerState = document.forms["seoForm"]['dstate'].value;
+    if (dealerName == null) {
+        alert("Please enter valid data");
+        return false;
+    }
+}
+
+
+
+// const subButton = document.getElementById('subButton');
+// subButton.addEventListener('click', getInput());
+// function alertUserInput() {
+//     alert(dealerName);
+// }
+
+// var subButton = document.getElementById('subButton');
+// subButton.addEventListener('click', dealerName, false);
+
+
+
+// var app = document.getElementById('app');
+// let formKeywordData = document.getElementById('formBlock');
+
+// let dcity = document.getElementById('dcity');
+// let dstate = document.getElementById('dstate');
+// let dspecialty = documet.getElementById('dspecialty');
+
+// const dealerData = { name: }
+
+
+// function getInputValue(dealerName) {
+//     // document.getElementById('formKeywordData').submit();
+//     alert(dealerName);
+// }
 
 
 // seo-keywords - exmaple 1

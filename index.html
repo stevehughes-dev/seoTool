@@ -11,11 +11,39 @@
 </head>
 
 <body>
-    <h1>Steve's SEO tool</h1>
-    <form>
-        <label for="Dealer Name"><input type="text" value="Dealer Name"></label> <br>
-        <label for="City"><input type="text" value="City"></label> <br>
-        <label for="State"><input type="text" value="State"></label> <br>
+    <div class="form-wrapper">
+        <form action="result.html" name="seoForm" id="formBlock" onsubmit="getinput()">
+            <label for="dname" class="text-box">
+                <input id="dname" name="dname" placeholder="Dealer Name" type="text"><br>
+            </label>
+            <label class="text-box" for="City"></label>
+            <input id="dcity" type="text" placeholder="city"> <br>
+            <label class="text-box" for="State"><input id="dstate" placeholder="state" type="text"></label> <br>
+            <label class="text-box" for="specialty"><input id="dspecialty" placeholder="Specialty" type="text"></label> <br>
+            <label for="Cars">Cars<input type="radio" name="cars" value="cars"></label> <br>
+            <label for="Sports Cars">Sports Cars<input type="radio" name="Sports cars" value="sports cars"></label><br>
+            <label for="European luxury sports cars">European luxury sports cars<input type="radio" name="European luxury sports cars" value="European luxury sports cars"></label><br>
+            <label for="trucks">Trucks<input type="radio" name="trucks" value="trucks"></label><br>
+            <label for="SUVs">Cars<input type="radio" name="suvs" value="suvs"></label><br>
+            <label for="Boats">Boats<input type="radio" name="boats" value="boats"></label><br>
+            <label for="Motorsports">Motorsports<input type="radio" name="motorsports" value="motorsports"></label><br>
+            <label for="Motorcycles">Motorcycles<input type="radio" name="Motorcycles" value="motorcycles"></label><br>
+            <label for="ATVs">ATVs<input type="radio" name="atvs" value="atvs"></label><br>
+            <label for="Tractors">Tractors<input type="radio" name="Tractors" value="Tractors"></label><br>
+            <label for="Service Center">Service Center<input type="radio" name="Service Center" value="Service Center"></label>
+            <input id="subButton" type="submit" value="Submit">
+        </form>
+    </div>
+
+
+    <!-- <h1>Steve's SEO tool</h1>
+    <form id="formBlock" action="post" onsubmit="return false;">
+        <label class="text-box" for="Dealer Name">Dealer Name:</label> <br>
+        <input id="dName" placeholder="Dealer Name" type="text"><br>
+        <label class="text-box" for="City"></label>
+        <input id="dcity" type="text" placeholder="city"> <br>
+        <label class="text-box" for="State"><input id="dstate" placeholder="state" type="text"></label> <br>
+        <label class="text-box" for="specialty"><input id="dspecialty" placeholder="Specialty" type="text"></label> <br>
         <label for="Cars">Cars<input type="radio" name="cars" value="cars"></label> <br>
         <label for="Sports Cars">Sports Cars<input type="radio" name="Sports cars" value="sports cars"></label><br>
         <label for="European luxury sports cars">European luxury sports cars<input type="radio" name="European luxury sports cars" value="European luxury sports cars"></label><br>
@@ -27,11 +55,12 @@
         <label for="ATVs">ATVs<input type="radio" name="atvs" value="atvs"></label><br>
         <label for="Tractors">Tractors<input type="radio" name="Tractors" value="Tractors"></label><br>
         <label for="Service Center">Service Center<input type="radio" name="Service Center" value="Service Center"></label><br>
-        <input type="button" value="Submit"></input>
+        <input type="button" onclick="getInputValue();" value="Submit"></input>
         <input type="reset" value="reset"></input>
     </form>
     </div>
-    <div id="app"></div>
+    <div id="app"></div> -->
+    <script src="js/app.js"></script>
 </body>
 
 </html>
