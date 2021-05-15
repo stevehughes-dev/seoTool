@@ -16,12 +16,29 @@
             <label for="dname" class="text-box">
                 <input id="dname" name="dname" placeholder="Dealer Name" type="text"><br>
             </label>
+
+            <label for="country">Choose A Country:</label>
+            <select name="nations" id="nations">
+                <option id="nationOpt" placeholder="Select a Nation">Select a Nation</option>
+            </select>
+            <br/>
+
             <label class="text-box" for="City"></label>
-            <input id="dcity" type="text" placeholder="city"> <br>
-            <label class="text-box" for="State"><input id="dstate" placeholder="state" type="text"></label> <br>
-            <label class="text-box" for="specialty"><input id="dspecialty" placeholder="Specialty" type="text"></label> <br>
-            <label for="Cars">Cars<input type="radio" name="cars" value="cars"></label> <br>
-            <label for="Sports Cars">Sports Cars<input type="radio" name="Sports cars" value="sports cars"></label><br>
+            <input id="dcity" name="dcity" type="text" placeholder="city">
+            <br/>
+
+            <label class="text-box" for="State"><input name="dstate" placeholder="state" type="text"></label>
+            <br>
+
+            <label class="text-box" for="specialty"><input name="dspecialty" placeholder="Specialty" type="text"></label>
+            <br/>
+
+            <label for="Cars">Cars<input type="radio" name="cars" value="cars"></label>
+            <br/>
+
+            <label for="Sports Cars">Sports Cars<input type="radio" name="Sports cars" value="sports cars"></label>
+            <br/>
+
             <label for="European luxury sports cars">European luxury sports cars<input type="radio" name="European luxury sports cars" value="European luxury sports cars"></label><br>
             <label for="trucks">Trucks<input type="radio" name="trucks" value="trucks"></label><br>
             <label for="SUVs">Cars<input type="radio" name="suvs" value="suvs"></label><br>
@@ -60,6 +77,7 @@
     </form>
     </div>
     <div id="app"></div> -->
+    <script src="js/arrays.js"></script>
     <script src="js/app.js"></script>
 </body>
 

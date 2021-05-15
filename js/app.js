@@ -1,3 +1,5 @@
+// import { arrays } from "./arrays.js"
+
 //  var dealerName = document.getElementById('dname').value;
 
 function getInput() {
@@ -11,6 +13,21 @@ function getInput() {
 }
 
 
+// Print nations array to dropdown 
+//const nationsDdMarkup = `${nationsArray.map(nation => `<option></option>`)}`;
+let sel = document.getElementById('nations');
+
+function printDdOpt(sel, arr) {
+    for (var i = 0; i < arr.length; i++) {
+        var opt = arr[i];
+        var el = document.createElement('option');
+        el.textContent = opt;
+        opt.value = opt;
+        sel.appendChild(el);
+    }
+}
+
+printDdOpt(sel, nationsArr);
 
 // const subButton = document.getElementById('subButton');
 // subButton.addEventListener('click', getInput());
