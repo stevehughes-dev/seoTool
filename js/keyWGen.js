@@ -1,6 +1,7 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const dealerName = urlParams.get('dname');
+const dealerCountry = urlParams.get('nations');
 const dealerCity = urlParams.get('dcity');
 
 const outPutHtml = `<p>Buy from ${dealerName} located in the heart of ${dealerCity}</p>`;

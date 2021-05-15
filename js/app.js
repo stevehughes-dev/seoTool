@@ -13,21 +13,40 @@ function getInput() {
 }
 
 
-// Print nations array to dropdown 
-//const nationsDdMarkup = `${nationsArray.map(nation => `<option></option>`)}`;
-let sel = document.getElementById('nations');
+
+
+// Print dropdown menu values
+
 
 function printDdOpt(sel, arr) {
-    for (var i = 0; i < arr.length; i++) {
-        var opt = arr[i];
-        var el = document.createElement('option');
+    for (let i = 0; i < arr.length; i++) {
+        let opt = arr[i];
+        const el = document.createElement('option');
         el.textContent = opt;
         opt.value = opt;
         sel.appendChild(el);
     }
 }
 
+// function shows and hides if-canada and if-usa based off user selection
+function showUsOrCa(select) {
+    if (select.value == 'Canada') {
+        document.getElementById('ifCanada').style.display = 'block';
+        document.getElementById('ifUsa').style.display = 'none';
+    } else if (select.value == 'United States') {
+        document.getElementById('ifUsa').style.display = 'block';
+        document.getElementById('ifCanada').style.display = 'none';
+    } else {
+        document.getElementById('ifUsa').style.display = 'none';
+        document.getElementById('ifCanada').style.display = 'none';
+    }
+}
+// Print nations dropdown values 
+let sel = document.getElementById('nationsDd');
 printDdOpt(sel, nationsArr);
+
+
+
 
 // const subButton = document.getElementById('subButton');
 // subButton.addEventListener('click', getInput());

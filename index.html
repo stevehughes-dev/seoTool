@@ -18,17 +18,36 @@
             </label>
 
             <label for="country">Choose A Country:</label>
-            <select name="nations" id="nations">
+            <select name="nations" id="nationsDd" onchange="showUsOrCa(this)">
                 <option id="nationOpt" placeholder="Select a Nation">Select a Nation</option>
             </select>
             <br/>
 
-            <label class="text-box" for="City"></label>
-            <input id="dcity" name="dcity" type="text" placeholder="city">
-            <br/>
+            <div id="ifUsa" class="if-usa">
+                <label class="text-box" for="State"><input name="dstate" placeholder="state" type="text"></label>
+                <br>
 
-            <label class="text-box" for="State"><input name="dstate" placeholder="state" type="text"></label>
-            <br>
+                <label class="text-box" for="City"></label>
+                <input id="dcity" name="dcity" type="text" placeholder="city">
+                <br/>
+
+                <label class="text-box" for="Zip"></label>
+                <input id="dzip" name="dzip" type="text" placeholder="zip">
+                <br/>
+            </div>
+
+            <div id="ifCanada" class="if-canada">
+                <label class="text-box" for="State"><input name="dprovince" placeholder="Province" type="text"></label>
+                <br>
+
+                <label class="text-box" for="City"></label>
+                <input id="dcity" name="dcity" type="text" placeholder="city">
+                <br/>
+
+                <label class="text-box" for="Postal"></label>
+                <input id="dpostal" name="dpostal" type="text" placeholder="Postal Code">
+                <br/>
+            </div>
 
             <label class="text-box" for="specialty"><input name="dspecialty" placeholder="Specialty" type="text"></label>
             <br/>
