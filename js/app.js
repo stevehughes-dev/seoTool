@@ -28,6 +28,8 @@ function printDdOpt(sel, arr) {
     }
 }
 
+
+
 // function shows and hides if-canada and if-usa based off user selection
 function showUsOrCa(select) {
     if (select.value == 'Canada') {
@@ -42,9 +44,17 @@ function showUsOrCa(select) {
     }
 }
 // Print nations dropdown values 
-let sel = document.getElementById('nationsDd');
-printDdOpt(sel, nationsArr);
+let nationsList = document.getElementById('nationsDd');
+printDdOpt(nationsList, nationsArr);
 
+let stateList = document.getElementById('dstate');
+printDdOpt(stateList, usStatesArr);
+
+let zipList = document.getElementById('dstate');
+printDdOpt(stateList, usStatesArr);
+
+let provinceList = document.getElementById('dprovince');
+printDdOpt(provinceList, caProvincesArr);
 
 
 
